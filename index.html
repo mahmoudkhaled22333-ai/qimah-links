@@ -3,28 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- إضافات مهمة لمحركات البحث -->
-<meta name="description" content="قمة البارون المتطور - جميع روابط التواصل والخدمات. نسعى بعد توفيق الله لنكون عند حسن ظن عملائنا في خدمتهم">
-<meta name="keywords" content="قمة البارون, روابط, تواصل, خدمات, شركة, السعودية">
-<meta name="author" content="قمة البارون المتطور">
-
-<!-- Open Graph للمشاركة على السوشيال ميديا -->
-<meta property="og:title" content="قمة البارون المتطور - جميع الروابط">
-<meta property="og:description" content="جميع روابط التواصل والخدمات لشركة قمة البارون المتطور">
-<meta property="og:image" content="رابط-صورتك-هنا">
-<meta property="og:url" content="رابط-موقعك-هنا">
-<meta property="og:type" content="website">
-
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="قمة البارون المتطور">
-<meta name="twitter:description" content="جميع روابط التواصل والخدمات">
-<meta name="twitter:image" content="رابط-صورتك-هنا">
     <title>قمة البارون المتطور - جميع الروابط</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #1a365d;
@@ -62,7 +42,6 @@
             border: 2px solid rgba(255, 255, 255, 0.1);
         }
         
-        /* الهيدر */
         .header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             padding: 40px 30px;
@@ -106,11 +85,7 @@
             margin: 0 auto 20px;
             border: 5px solid var(--accent);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        
-        .logo i {
-            font-size: 50px;
-            color: var(--primary);
+            overflow: hidden;
         }
         
         .company-name {
@@ -130,7 +105,6 @@
             line-height: 1.6;
         }
         
-        /* قسم الروابط */
         .links-section {
             padding: 40px 30px;
         }
@@ -237,7 +211,6 @@
             line-height: 1.5;
         }
         
-        /* قسم التواصل */
         .contact-section {
             background: #f7fafc;
             padding: 40px 30px;
@@ -298,7 +271,6 @@
             color: var(--primary);
         }
         
-        /* الفوتر */
         .footer {
             background: var(--primary);
             padding: 25px;
@@ -338,7 +310,6 @@
             transform: scale(1.1);
         }
         
-        /* التجاوب مع الشاشات الصغيرة */
         @media (max-width: 768px) {
             .container {
                 border-radius: 15px;
@@ -361,7 +332,6 @@
             }
         }
         
-        /* تأثيرات إضافية */
         .pulse {
             animation: pulse 2s infinite;
         }
@@ -387,11 +357,11 @@
 </head>
 <body>
     <div class="container">
-        <!-- الهيدر -->
         <div class="header">
             <div class="logo-container">
                 <div class="logo pulse">
-                    <i class="fas fa-crown"></i>
+                    <!-- هنا ضع صورة اللوجو -->
+                    <img src="logo.png" alt="لوجو قمة البارون المتطور" style="width: 100%; height: 100%; object-fit: contain; padding: 15px;">
                 </div>
                 <h1 class="company-name">قمة البارون المتطور</h1>
                 <p class="company-slogan">
@@ -400,12 +370,11 @@
             </div>
         </div>
         
-        <!-- قسم الروابط الرئيسية -->
+        <!-- باقي الكود كما هو -->
         <div class="links-section">
             <h2 class="section-title">روابطنا الرئيسية</h2>
             
             <div class="links-grid">
-                <!-- الموقع الرسمي -->
                 <a href="https://qimatalbarun.vercel.app/" target="_blank" class="link-card">
                     <span class="badge">الأهم</span>
                     <div class="link-icon">
@@ -417,8 +386,6 @@
                     </div>
                 </a>
                 
-           
-                <!-- التواصل عبر واتساب -->
                 <a href="https://wa.me/0575555940" target="_blank" class="link-card">
                     <div class="link-icon" style="background: linear-gradient(135deg, #25D366, #128C7E);">
                         <i class="fab fa-whatsapp"></i>
@@ -429,7 +396,6 @@
                     </div>
                 </a>
                 
-                <!-- إنستغرام -->
                 <a href="https://www.instagram.com/barun.barun1/" target="_blank" class="link-card">
                     <div class="link-icon" style="background: linear-gradient(135deg, #E1306C, #C13584);">
                         <i class="fab fa-instagram"></i>
@@ -440,20 +406,16 @@
                     </div>
                 </a>
                 
-            
-<a href="https://www.facebook.com/profile.php?id=61587183114146" target="_blank" class="link-card">
-    <div class="link-icon" style="background: linear-gradient(135deg, #1877F2, #0A5AC2);">
-        <i class="fab fa-facebook-f"></i>
-    </div>
-    <div class="link-content">
-        <h3 class="link-title">صفحة الفيسبوك</h3>
-        <p class="link-description">تابعنا على فيسبوك لأحدث العروض والأخبار</p>
-    </div>
-</a>
+                <a href="https://www.facebook.com/profile.php?id=61587183114146" target="_blank" class="link-card">
+                    <div class="link-icon" style="background: linear-gradient(135deg, #1877F2, #0A5AC2);">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3 class="link-title">صفحة الفيسبوك</h3>
+                        <p class="link-description">تابعنا على فيسبوك لأحدث العروض والأخبار</p>
+                    </div>
+                </a>
                 
-        
-                
-                <!-- قائمة البريد الإلكتروني -->
                 <a href="mailto:info@baronpro.com" target="_blank" class="link-card">
                     <div class="link-icon" style="background: linear-gradient(135deg, #EA4335, #C23321);">
                         <i class="fas fa-envelope"></i>
@@ -464,7 +426,6 @@
                     </div>
                 </a>
                 
-                <!-- خرائط جوجل -->
                 <a href="https://share.google/t9VSvqUc5suy4tR2L" target="_blank" class="link-card">
                     <div class="link-icon" style="background: linear-gradient(135deg, #34A853, #2E8B57);">
                         <i class="fas fa-map-marker-alt"></i>
@@ -474,15 +435,9 @@
                         <p class="link-description">ابحث عن موقعنا على خرائط جوجل</p>
                     </div>
                 </a>
-             
-            
-                
-           
-                </a>
             </div>
         </div>
         
-        <!-- قسم التواصل -->
         <div class="contact-section">
             <h2 class="section-title">معلومات التواصل</h2>
             
@@ -529,7 +484,6 @@
             </div>
         </div>
         
-        <!-- الفوتر -->
         <div class="footer">
             <p class="footer-text">
                 © 2024 قمة البارون المتطور. جميع الحقوق محفوظة.<br>
@@ -540,58 +494,11 @@
                 <a href="https://wa.me/0575555940" target="_blank" class="social-icon">
                     <i class="fab fa-whatsapp"></i>
                 </a>
-                <a href="https://www.instagram.com/barun.barun1/"  target="_blank" class="social-icon">
+                <a href="https://www.instagram.com/barun.barun1/" target="_blank" class="social-icon">
                     <i class="fab fa-instagram"></i>
                 </a>
-           
-            
-             
             </div>
         </div>
     </div>
-    <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
-
-    <script>
-        // إضافة تأثيرات تفاعلية بسيطة
-        document.addEventListener('DOMContentLoaded', function() {
-            // تأثير النقر على البطاقات
-            const cards = document.querySelectorAll('.link-card');
-            cards.forEach(card => {
-                card.addEventListener('click', function(e) {
-                    // يمكن إضافة تأثير صوتي أو رسالة هنا
-                    console.log('تم النقر على: ' + this.querySelector('.link-title').textContent);
-                });
-            });
-            
-            // إظهار تاريخ السنة الحالية
-            const yearSpan = document.querySelector('#current-year');
-            if (yearSpan) {
-                yearSpan.textContent = new Date().getFullYear();
-            }
-            
-            // تأثير عند التمرير
-            window.addEventListener('scroll', function() {
-                const header = document.querySelector('.header');
-                const scrolled = window.pageYOffset;
-                if (scrolled > 50) {
-                    header.style.transform = 'translateY(-10px)';
-                } else {
-                    header.style.transform = 'translateY(0)';
-                }
-            });
-        });
-        
-        // رسالة ترحيب عند فتح الصفحة
-        window.onload = function() {
-            console.log('مرحباً بك في صفحة روابط قمة البارون المتطور!');
-        };
-    </script>
 </body>
 </html>
