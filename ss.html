@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- إضافات مهمة لمحركات البحث -->
+<meta name="description" content="قمة البارون المتطور - جميع روابط التواصل والخدمات. نسعى بعد توفيق الله لنكون عند حسن ظن عملائنا في خدمتهم">
+<meta name="keywords" content="قمة البارون, روابط, تواصل, خدمات, شركة, السعودية">
+<meta name="author" content="قمة البارون المتطور">
+
+<!-- Open Graph للمشاركة على السوشيال ميديا -->
+<meta property="og:title" content="قمة البارون المتطور - جميع الروابط">
+<meta property="og:description" content="جميع روابط التواصل والخدمات لشركة قمة البارون المتطور">
+<meta property="og:image" content="رابط-صورتك-هنا">
+<meta property="og:url" content="رابط-موقعك-هنا">
+<meta property="og:type" content="website">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="قمة البارون المتطور">
+<meta name="twitter:description" content="جميع روابط التواصل والخدمات">
+<meta name="twitter:image" content="رابط-صورتك-هنا">
+    <title>قمة البارون المتطور - جميع الروابط</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2d3748;
+            --accent: #3182ce;
+            --light: #f7fafc;
+            --success: #38a169;
+            --warning: #d69e2e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* الهيدر */
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            animation: float 20s linear infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(-30px, -30px) rotate(360deg); }
+        }
+        
+        .logo-container {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            border: 5px solid var(--accent);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo i {
+            font-size: 50px;
+            color: var(--primary);
+        }
+        
+        .company-name {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .company-slogan {
+            font-size: 18px;
+            color: #cbd5e0;
+            font-weight: 300;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        /* قسم الروابط */
+        .links-section {
+            padding: 40px 30px;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: var(--primary);
+            margin-bottom: 35px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--accent), var(--success));
+            border-radius: 2px;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .link-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            text-decoration: none;
+            color: var(--secondary);
+            transition: all 0.3s ease;
+            border: 2px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .link-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(49, 130, 206, 0.2);
+            border-color: var(--accent);
+        }
+        
+        .link-card:hover::before {
+            width: 100%;
+            opacity: 0.1;
+        }
+        
+        .link-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .link-icon i {
+            font-size: 25px;
+            color: white;
+        }
+        
+        .link-content {
+            flex: 1;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .link-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+        
+        .link-description {
+            font-size: 14px;
+            color: #718096;
+            line-height: 1.5;
+        }
+        
+        /* قسم التواصل */
+        .contact-section {
+            background: #f7fafc;
+            padding: 40px 30px;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon i {
+            font-size: 20px;
+            color: white;
+        }
+        
+        .contact-text {
+            flex: 1;
+        }
+        
+        .contact-label {
+            font-size: 14px;
+            color: #718096;
+            margin-bottom: 5px;
+        }
+        
+        .contact-value {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        /* الفوتر */
+        .footer {
+            background: var(--primary);
+            padding: 25px;
+            text-align: center;
+            color: white;
+        }
+        
+        .footer-text {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #cbd5e0;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            background: var(--accent);
+            transform: scale(1.1);
+        }
+        
+        /* التجاوب مع الشاشات الصغيرة */
+        @media (max-width: 768px) {
+            .container {
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .company-name {
+                font-size: 26px;
+            }
+            
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .link-card {
+                padding: 20px;
+            }
+        }
+        
+        /* تأثيرات إضافية */
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(49, 130, 206, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(49, 130, 206, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(49, 130, 206, 0); }
+        }
+        
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--success);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- الهيدر -->
+        <div class="header">
+            <div class="logo-container">
+                <div class="logo pulse">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <h1 class="company-name">قمة البارون المتطور</h1>
+                <p class="company-slogan">
+                    نسعى بعد توفيق الله لنكون عند حسن ظن عملائنا في خدمتهم. شركة رائدة في مجال [البهارات والتوابل والمكسرات والبقوليات والمعلبات وغيرها]، نقدم حلولاً مبتكرة وجودة عالية.
+                </p>
+            </div>
+        </div>
+        
+        <!-- قسم الروابط الرئيسية -->
+        <div class="links-section">
+            <h2 class="section-title">روابطنا الرئيسية</h2>
+            
+            <div class="links-grid">
+                <!-- الموقع الرسمي -->
+                <a href="https://qimatalbarun.vercel.app/" target="_blank" class="link-card">
+                    <span class="badge">الأهم</span>
+                    <div class="link-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3 class="link-title">الموقع الرسمي</h3>
+                        <p class="link-description">زيارة موقعنا الرسمي للتعرف على خدماتنا ومنتجاتنا</p>
+                    </div>
+                </a>
+                
+           
+                <!-- التواصل عبر واتساب -->
+                <a href="https://wa.me/0575555940" target="_blank" class="link-card">
+                    <div class="link-icon" style="background: linear-gradient(135deg, #25D366, #128C7E);">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3 class="link-title">واتساب الأعمال</h3>
+                        <p class="link-description">للتواصل المباشر والاستفسارات والطلبات</p>
+                    </div>
+                </a>
+                
+                <!-- إنستغرام -->
+                <a href="https://www.instagram.com/barun.barun1/" target="_blank" class="link-card">
+                    <div class="link-icon" style="background: linear-gradient(135deg, #E1306C, #C13584);">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3 class="link-title">إنستغرام</h3>
+                        <p class="link-description">تابع آخر عروضنا وأخبارنا على إنستغرام</p>
+                    </div>
+                </a>
+                
+            
+<a href="https://www.facebook.com/profile.php?id=61587183114146" target="_blank" class="link-card">
+    <div class="link-icon" style="background: linear-gradient(135deg, #1877F2, #0A5AC2);">
+        <i class="fab fa-facebook-f"></i>
+    </div>
+    <div class="link-content">
+        <h3 class="link-title">صفحة الفيسبوك</h3>
+        <p class="link-description">تابعنا على فيسبوك لأحدث العروض والأخبار</p>
+    </div>
+</a>
+                
+        
+                
+                <!-- قائمة البريد الإلكتروني -->
+                <a href="mailto:info@baronpro.com" target="_blank" class="link-card">
+                    <div class="link-icon" style="background: linear-gradient(135deg, #EA4335, #C23321);">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3 class="link-title">البريد الإلكتروني</h3>
+                        <p class="link-description">راسلنا عبر البريد الإلكتروني للاستفسارات الرسمية</p>
+                    </div>
+                </a>
+                
+                <!-- خرائط جوجل -->
+                <a href="https://share.google/t9VSvqUc5suy4tR2L" target="_blank" class="link-card">
+                    <div class="link-icon" style="background: linear-gradient(135deg, #34A853, #2E8B57);">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3 class="link-title">الموقع على الخريطة</h3>
+                        <p class="link-description">ابحث عن موقعنا على خرائط جوجل</p>
+                    </div>
+                </a>
+             
+            
+                
+           
+                </a>
+            </div>
+        </div>
+        
+        <!-- قسم التواصل -->
+        <div class="contact-section">
+            <h2 class="section-title">معلومات التواصل</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <div class="contact-label">الهاتف</div>
+                        <div class="contact-value">0575555940</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <div class="contact-label">البريد الإلكتروني</div>
+                        <div class="contact-value">info@baronpro.com</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <div class="contact-label">العنوان</div>
+                        <div class="contact-value">المملكة العربية السعودية - جدة -دوار النجوم -حي بترمين</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-text">
+                        <div class="contact-label">ساعات العمل</div>
+                        <div class="contact-value">السبت- الخميس: 8 صباحاً -8 مساءً</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- الفوتر -->
+        <div class="footer">
+            <p class="footer-text">
+                © 2024 قمة البارون المتطور. جميع الحقوق محفوظة.<br>
+                نسعى بعد توفيق الله لنكون عند حسن ظن عملائنا في خدمتهم
+            </p>
+            
+            <div class="social-icons">
+                <a href="https://wa.me/0575555940" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/barun.barun1/"  target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+           
+            
+             
+            </div>
+        </div>
+    </div>
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+    <script>
+        // إضافة تأثيرات تفاعلية بسيطة
+        document.addEventListener('DOMContentLoaded', function() {
+            // تأثير النقر على البطاقات
+            const cards = document.querySelectorAll('.link-card');
+            cards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    // يمكن إضافة تأثير صوتي أو رسالة هنا
+                    console.log('تم النقر على: ' + this.querySelector('.link-title').textContent);
+                });
+            });
+            
+            // إظهار تاريخ السنة الحالية
+            const yearSpan = document.querySelector('#current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+            
+            // تأثير عند التمرير
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('.header');
+                const scrolled = window.pageYOffset;
+                if (scrolled > 50) {
+                    header.style.transform = 'translateY(-10px)';
+                } else {
+                    header.style.transform = 'translateY(0)';
+                }
+            });
+        });
+        
+        // رسالة ترحيب عند فتح الصفحة
+        window.onload = function() {
+            console.log('مرحباً بك في صفحة روابط قمة البارون المتطور!');
+        };
+    </script>
+</body>
+</html>
